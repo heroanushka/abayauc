@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+			@font-face {
+           font-family:noto sans sinhala;
+           font-style:normal;
+           font-weight:400;
+           src:url(//fonts.gstatic.com/ea/notosanssinhala/v1/NotoSansSinhala-Regular.eot);
+           src:url(//fonts.gstatic.com/ea/notosanssinhala/v1/NotoSansSinhala-Regular.eot?#iefix) format('embedded-opentype'),
+          
+           
+         }
+   
+			body { 
+				font-family: noto sans sinhala,'Poppins', sans-serif;
+				font-weight:400;
+				background-size: auto;
+			}
+			
+						 :focus{
+     outline: none;
+    } 
+
+    ::-webkit-scrollbar {
+     width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background:#ffff ; 
+    }
+ 
+/* Handle */
+   ::-webkit-scrollbar-thumb {
+   background:#f2f2f2 ; 
+   }
+
+/* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+   background:#f2f2f2 ; 
+   }
+	
+			.custom-anchor {
+			color: #ffffff;
+			}
+			.custom-anchor:hover {
+			color: #ffffff;
+			}
+			.btn {background-color:#32de84;
+			border-color: white;
+		    border-radius: 8px; }
+
+			.btn:hover { background-color: rgb(252, 185, 0);
+			border-color: white;
+		    border-radius: 8px; }
+
+            .form-control { 
+				border: 0.6mm solid #32de84;
+				border-radius: 8px;
+				position: relative;
+				flex-direction: column;
+				display: flex;
+				margin-bottom: 5px;
+			}
+			.nav-item {
+				margin-top: -10px;
+				
+				font-weight: 700;
+			}
+            .navbar-dark .navbar-nav .nav-link {
+               color: rgb(255 255 255);
+             }
+			 .bg-dark {
+              background-color: #000000!important;
+			  
+                }
+			.P {
+				font-size: 14px ;
+				color: #504949;
+			}	
+		</style>
+	</head>
+	<body onload="javascript:txtBox.box1.focus();">
+		
+			</div>
+			<form name="converter">
+				<div class="row">
+					<div class="col-md-12">
+						<span>Unicode </span>
+						<textarea class="form-control" onkeyup="startText();" onselect="startText();" onclick="startText();" name="unicode" rows="7"></textarea>
+						<input class="btn btn-danger float-right mt-1" type="reset" value="Clear" title="Cleared!" data-toggle="popover" data-trigger="focus" data-content="All fields has been cleared!">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<span>FM </span>
+						<textarea class="form-control" id="abhaya" name="abhaya" rows="7" style="font-family:'FMAbhaya X', FMAbhaya, sans-serif!important;"></textarea>
+						<input id="copy" value="Copy" type="button" class="btn btn-success float-right mt-1" onclick="copyText()" data-toggle="popover" title="Copy" data-content="Converted text copied to clipboard.">
+					</div>
+				</div>
+			</form>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="./js/stranslations3.js"></script>
+	</body>
+</html>
